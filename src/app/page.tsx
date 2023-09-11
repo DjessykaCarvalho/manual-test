@@ -1,7 +1,7 @@
-'use client'
+import HomePage from '@/pages/Home'
 
 function Home() {
-  return <div>NextJS</div>
+  return <HomePage />
 }
 
 export default Home

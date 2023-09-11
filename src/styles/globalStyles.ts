@@ -7,6 +7,15 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     box-sizing: border-box;
   }
+
+  html, body {
+    height: 100vh;
+  }
+
+  button {
+    border: none;
+    background: none;
+  }
 `
 
 export default GlobalStyle
