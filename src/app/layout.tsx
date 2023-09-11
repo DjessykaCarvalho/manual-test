@@ -1,3 +1,5 @@
+import StyledComponentsRegistry from '@/lib/registry'
+
 interface IRootLayoutProps {
   children: React.ReactNode
 }
@@ -5,7 +7,9 @@ interface IRootLayoutProps {
 function RootLayout({ children }: IRootLayoutProps) {
   return (
     <html lang='en'>
-      <body>{children}</body>
+      <body>
+        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+      </body>
     </html>
   )
 }
