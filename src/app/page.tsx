@@ -1,5 +1,5 @@
 function Home() {
-  return <div>NextJS</div>;
+  return <div>NextJS</div>
 }
 
-export default Home;
+export default Home
