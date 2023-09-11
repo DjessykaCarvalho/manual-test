@@ -2,13 +2,13 @@
 
 import Hero from '@/components/Hero'
 import { HomeContainer } from './styles'
-import Hair from '@/components/Hair'
+import Product from '@/components/Product'
 
 const HomePage = () => {
   return (
     <HomeContainer>
       <Hero />
-      <Hair />
+      <Product />
     </HomeContainer>
   )
 }

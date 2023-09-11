@@ -2,15 +2,15 @@
 
 import Step from '../Step'
 import { stepDescriptions } from './stepDescription'
-import { ContainerSteps, HairContainer, Title } from './styles'
+import { ContainerSteps, ProductContainer, Title } from './styles'
 import step1 from '@/assets/images/Step1.png'
 import step2 from '@/assets/images/Step2.png'
 import background1 from '@/assets/images/01.png'
 import background2 from '@/assets/images/02.png'
 
-const Hair = () => {
+const Product = () => {
   return (
-    <HairContainer>
+    <ProductContainer>
       <Title>What we can help with</Title>
       <ContainerSteps>
         <Step
@@ -25,8 +25,8 @@ const Hair = () => {
           revert
         />
       </ContainerSteps>
-    </HairContainer>
+    </ProductContainer>
   )
 }
 
-export default Hair
+export default Product

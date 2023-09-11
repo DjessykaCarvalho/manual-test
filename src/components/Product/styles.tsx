@@ -1,6 +1,6 @@
 import { styled } from 'styled-components'
 
-export const HairContainer = styled.div`
+export const ProductContainer = styled.div`
   background-color: ${({ theme }) => theme.COLORS.white};
   display: flex;
   flex-direction: column;
