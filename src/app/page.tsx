@@ -1,3 +1,5 @@
+'use client'
+
 function Home() {
   return <div>NextJS</div>
 }

@@ -1,4 +1,10 @@
+'use client'
+
+import { ttNormsScript } from '@/assets/fonts'
 import StyledComponentsRegistry from '@/lib/registry'
+import GlobalStyle from '@/styles/globalStyles'
+import { theme } from '@/styles/theme'
+import { ThemeProvider } from 'styled-components'
 
 interface IRootLayoutProps {
   children: React.ReactNode
@@ -6,9 +12,12 @@ interface IRootLayoutProps {
 
 function RootLayout({ children }: IRootLayoutProps) {
   return (
-    <html lang='en'>
+    <html className={ttNormsScript.className}>
       <body>
-        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        <ThemeProvider theme={theme}>
+          <GlobalStyle />
+          <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        </ThemeProvider>
       </body>
     </html>
   )
