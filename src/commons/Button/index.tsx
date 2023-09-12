@@ -4,11 +4,13 @@ import { ButtonContainer, Label } from './styles'
 
 interface IButtonProps {
   label: string
+  onClick(): void
+  disabled?: boolean
 }
 
-const Button = ({ label }: IButtonProps) => {
+const Button = ({ label, onClick, disabled }: IButtonProps) => {
   return (
-    <ButtonContainer>
+    <ButtonContainer disabled={disabled} onClick={onClick}>
       <Label>{label}</Label>
     </ButtonContainer>
   )

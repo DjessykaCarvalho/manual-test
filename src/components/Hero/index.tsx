@@ -12,7 +12,11 @@ import {
 import logo from '@/assets/svg/logo.svg'
 import Button from '@/commons/Button'
 
-const Hero = () => {
+interface IHeroProps {
+  handleOpenQuiz(): void
+}
+
+const Hero = ({ handleOpenQuiz }: IHeroProps) => {
   return (
     <HeroContainer>
       <ContainerLogo>
@@ -27,7 +31,7 @@ const Hero = () => {
           </Subtitle>
         </TitleContainer>
         <div>
-          <Button label='Take the quiz' />
+          <Button label='Take the quiz' onClick={handleOpenQuiz} />
         </div>
       </ContainerInfo>
     </HeroContainer>
