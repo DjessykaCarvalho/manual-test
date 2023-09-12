@@ -24,7 +24,7 @@ export interface IStepDescription {
 
 const Step = ({ image, description, revert, backgroundImage }: IStepProps) => {
   return (
-    <StepContainer revert={revert} backgroundImage={backgroundImage}>
+    <StepContainer revert={String(revert)} backgroundimage={backgroundImage}>
       <div>
         <Image src={image} alt='' />
       </div>

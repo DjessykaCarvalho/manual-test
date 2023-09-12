@@ -2,20 +2,20 @@ import { StaticImageData } from 'next/image'
 import { css, styled } from 'styled-components'
 
 interface IStepContainerProps {
-  revert?: boolean
-  backgroundImage: StaticImageData
+  revert?: string
+  backgroundimage: StaticImageData
 }
 
 export const StepContainer = styled.div<IStepContainerProps>`
   display: flex;
   gap: 120px;
-  background-image: url(${({ backgroundImage }) => backgroundImage.src});
+  background-image: url(${({ backgroundimage }) => backgroundimage.src});
   background-repeat: no-repeat;
   background-position-y: center;
   background-position-x: 66%;
 
   ${({ revert }) =>
-    revert &&
+    revert === 'true' &&
     css`
       flex-direction: row-reverse;
       background-position-x: 17%;
