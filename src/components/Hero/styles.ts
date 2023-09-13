@@ -33,17 +33,17 @@ export const TitleContainer = styled.div`
 
 export const Title = styled.span`
   color: ${({ theme }) => theme.COLORS.father};
-  font-size: 90px;
+  font-size: ${({ theme }) => theme.FONT.SIZE.gigantic};
   font-style: normal;
-  font-weight: 600;
-  line-height: 90px;
-  letter-spacing: -2.7px;
+  font-weight: ${({ theme }) => theme.FONT.WEIGHT.semibold};
+  line-height: ${({ theme }) => theme.FONT.LINE_HEIGHT.xxlarge};
+  letter-spacing: ${({ theme }) => theme.FONT.LETTER_SPACING.negativeLarge};
 `
 
 export const Subtitle = styled.span`
   color: ${({ theme }) => theme.COLORS.father};
-  font-size: 18px;
+  font-size: ${({ theme }) => theme.FONT.SIZE.large};
   font-style: normal;
-  font-weight: 400;
-  line-height: 30px;
+  font-weight: ${({ theme }) => theme.FONT.WEIGHT.regular};
+  line-height: ${({ theme }) => theme.FONT.LINE_HEIGHT.medium};
 `

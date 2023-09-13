@@ -3,13 +3,13 @@ import googleLogo from '@/assets/svg/google.svg'
 import twitterLogo from '@/assets/svg/twitter.svg'
 import { StaticImageData } from 'next/image'
 
-interface ILinkList {
+export interface ILinkList {
   title: string
   icons?: boolean
-  links: Array<{ label?: string; icon?: StaticImageData }>
+  links: Array<{ label?: string; icon?: StaticImageData; url?: string }>
 }
 
-export const linkList = [
+export const linkList: Array<ILinkList> = [
   {
     title: 'Product',
     links: [
@@ -39,6 +39,10 @@ export const linkList = [
   {
     title: 'Follow us',
     icons: true,
-    links: [{ icon: facebookLogo }, { icon: googleLogo }, { icon: twitterLogo }]
+    links: [
+      { icon: facebookLogo, url: 'https://www.facebook.com/MenofManual' },
+      { icon: googleLogo },
+      { icon: twitterLogo, url: 'https://twitter.com/MenofManual' }
+    ]
   }
-] as Array<ILinkList>
+]

@@ -8,7 +8,7 @@ export interface IQuestionProps {
   }>
 }
 
-export const questions = [
+export const questions: Array<IQuestionProps> = [
   {
     question: 'Which image best matches your hair loss?',
     type: 'ChoiceType',
@@ -85,4 +85,4 @@ export const questions = [
       }
     ]
   }
-] as Array<IQuestionProps>
+]

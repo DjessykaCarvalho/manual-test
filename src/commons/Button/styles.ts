@@ -7,9 +7,9 @@ export const ButtonContainer = styled.button`
 `
 export const Label = styled.span`
   color: ${({ theme }) => theme.COLORS.white};
-  font-size: 10px;
-  font-weight: 700;
-  line-height: 15px;
-  letter-spacing: 1.5px;
+  font-size: ${({ theme }) => theme.FONT.SIZE.small};
+  font-weight: ${({ theme }) => theme.FONT.WEIGHT.bold};
+  line-height: ${({ theme }) => theme.FONT.LINE_HEIGHT.small};
+  letter-spacing: ${({ theme }) => theme.FONT.LETTER_SPACING.normal};
   text-transform: uppercase;
 `

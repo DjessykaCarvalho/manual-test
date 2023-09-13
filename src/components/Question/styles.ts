@@ -8,10 +8,10 @@ export const QuestionContainer = styled.div`
 
 export const Title = styled.div`
   color: ${({ theme }) => theme.COLORS.father};
-  font-size: 28px;
-  font-weight: 600;
-  line-height: 40px;
-  letter-spacing: -0.84px;
+  font-size: ${({ theme }) => theme.FONT.SIZE.xxlarge};
+  font-weight: ${({ theme }) => theme.FONT.WEIGHT.semibold};
+  line-height: ${({ theme }) => theme.FONT.LINE_HEIGHT.large};
+  letter-spacing: ${({ theme }) => theme.FONT.LETTER_SPACING.negativeSmall};
 `
 
 export const RadioInputOption = styled.input.attrs({ type: 'radio' })`
@@ -22,9 +22,9 @@ export const RadioLabel = styled.label`
   display: flex;
   align-items: center;
   color: ${({ theme }) => theme.COLORS.father};
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 30px;
+  font-size: ${({ theme }) => theme.FONT.SIZE.large};
+  font-weight: ${({ theme }) => theme.FONT.WEIGHT.regular};
+  line-height: ${({ theme }) => theme.FONT.LINE_HEIGHT.medium};
 `
 
 export const Options = styled.div`

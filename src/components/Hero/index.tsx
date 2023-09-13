@@ -11,6 +11,7 @@ import {
 } from './styles'
 import logo from '@/assets/svg/logo.svg'
 import Button from '@/commons/Button'
+import { heroStrings } from '@/data/heroStrings'
 
 interface IHeroProps {
   handleOpenQuiz(): void
@@ -24,11 +25,8 @@ const Hero = ({ handleOpenQuiz }: IHeroProps) => {
       </ContainerLogo>
       <ContainerInfo>
         <TitleContainer>
-          <Title>Be good to yourself</Title>
-          <Subtitle>
-            We’re working around the clock to bring you a holistic approach to
-            your wellness. From top to bottom, inside and out.
-          </Subtitle>
+          <Title>{heroStrings.title}</Title>
+          <Subtitle>{heroStrings.subtitle}</Subtitle>
         </TitleContainer>
         <div>
           <Button label='Take the quiz' onClick={handleOpenQuiz} />

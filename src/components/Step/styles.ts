@@ -36,26 +36,26 @@ export const DescriptionContainer = styled.div`
 
 export const Type = styled.div`
   color: ${({ theme }) => theme.COLORS.grandfather30};
-  font-size: 10px;
-  font-weight: 700;
-  line-height: 15px;
-  letter-spacing: 1.5px;
+  font-size: ${({ theme }) => theme.FONT.SIZE.small};
+  font-weight: ${({ theme }) => theme.FONT.WEIGHT.bold};
+  line-height: ${({ theme }) => theme.FONT.LINE_HEIGHT.small};
+  letter-spacing: ${({ theme }) => theme.FONT.LETTER_SPACING.normal};
   text-transform: uppercase;
 `
 
 export const Title = styled.div`
   color: ${({ theme }) => theme.COLORS.father};
-  font-size: 28px;
-  font-weight: 600;
-  line-height: 40px;
-  letter-spacing: -0.84px;
+  font-size: ${({ theme }) => theme.FONT.SIZE.xxlarge};
+  font-weight: ${({ theme }) => theme.FONT.WEIGHT.semibold};
+  line-height: ${({ theme }) => theme.FONT.LINE_HEIGHT.large};
+  letter-spacing: ${({ theme }) => theme.FONT.LETTER_SPACING.negativeSmall};
   margin-top: 10px;
 `
 
 export const Subtitle = styled.div`
   color: ${({ theme }) => theme.COLORS.father};
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 30px;
+  font-size: ${({ theme }) => theme.FONT.SIZE.large};
+  font-weight: ${({ theme }) => theme.FONT.WEIGHT.regular};
+  line-height: ${({ theme }) => theme.FONT.LINE_HEIGHT.medium};
   margin-top: 22px;
 `

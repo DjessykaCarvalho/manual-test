@@ -9,10 +9,10 @@ export const ProductContainer = styled.div`
 `
 export const Title = styled.div`
   color: ${({ theme }) => theme.COLORS.father};
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 60px;
-  letter-spacing: -1.2px;
+  font-size: ${({ theme }) => theme.FONT.SIZE.superlarge};
+  font-weight: ${({ theme }) => theme.FONT.WEIGHT.semibold};
+  line-height: ${({ theme }) => theme.FONT.LINE_HEIGHT.xlarge};
+  letter-spacing: ${({ theme }) => theme.FONT.LETTER_SPACING.negativeMedium};
 `
 
 export const ContainerSteps = styled.div`

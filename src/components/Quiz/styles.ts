@@ -16,17 +16,17 @@ export const ContainerButtons = styled.div`
 `
 
 export const CloseButton = styled.div`
-  font-size: 25px;
+  font-size: ${({ theme }) => theme.FONT.SIZE.xlarge};
   text-align: end;
   cursor: pointer;
 `
 
 export const Message = styled.div`
   color: ${({ theme }) => theme.COLORS.father};
-  font-size: 28px;
-  font-weight: 400;
-  line-height: 40px;
-  letter-spacing: -0.84px;
+  font-size: ${({ theme }) => theme.FONT.SIZE.xxlarge};
+  font-weight: ${({ theme }) => theme.FONT.WEIGHT.regular};
+  line-height: ${({ theme }) => theme.FONT.LINE_HEIGHT.large};
+  letter-spacing: ${({ theme }) => theme.FONT.LETTER_SPACING.negativeSmall};
 
   a {
     color: ${({ theme }) => theme.COLORS.grandfatherBackground};

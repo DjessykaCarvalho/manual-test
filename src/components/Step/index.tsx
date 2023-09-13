@@ -8,18 +8,13 @@ import {
   Title,
   Type
 } from './styles'
+import { IStepDescription } from '@/data/stepDescription'
 
 interface IStepProps {
   image: StaticImageData
   backgroundImage: StaticImageData
   description: IStepDescription
   revert?: boolean
-}
-
-export interface IStepDescription {
-  type: string
-  title: string
-  subtitle: string
 }
 
 const Step = ({ image, description, revert, backgroundImage }: IStepProps) => {
