@@ -4,6 +4,10 @@ export const FooterContainer = styled.div`
   background: ${({ theme }) => theme.COLORS.grandfather60};
   position: relative;
   padding-top: 73px;
+
+  @media (max-width: ${({ theme }) => theme.BREAKPOINTS.md}) {
+    padding-top: 50px;
+  }
 `
 
 export const ContainerLogo = styled.div`
@@ -15,6 +19,19 @@ export const ContainerLogo = styled.div`
     width: 75px;
     height: 75px;
   }
+
+  @media (max-width: ${({ theme }) => theme.BREAKPOINTS.md}) {
+    display: none;
+  }
+
+  @media (max-width: ${({ theme }) => theme.BREAKPOINTS.lg}) {
+    left: 5%;
+
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
 `
 
 export const ContainerLinks = styled.div`
@@ -23,6 +40,13 @@ export const ContainerLinks = styled.div`
   gap: 25px;
   width: 80%;
   margin: 0 auto 71px auto;
+
+  @media (max-width: ${({ theme }) => theme.BREAKPOINTS.md}) {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 10% 30px 10%;
+    width: auto;
+  }
 `
 
 export const ContainerList = styled.div`
@@ -30,6 +54,11 @@ export const ContainerList = styled.div`
   display: flex;
   gap: 20px;
   flex-direction: column;
+
+  @media (max-width: ${({ theme }) => theme.BREAKPOINTS.md}) {
+    width: 120px;
+    gap: 5px;
+  }
 `
 
 export const TitleLink = styled.div`

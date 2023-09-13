@@ -22,8 +22,28 @@ export const StepContainer = styled.div<IStepContainerProps>`
     `}
 
   img {
-    width: 370px;
     height: 445px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.BREAKPOINTS.md}) {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 0 10% 25px 10%;
+    background-position-y: bottom;
+    background-position-x: center;
+
+    img {
+      height: 350px;
+      width: auto;
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.BREAKPOINTS.xxs}) {
+    img {
+      height: 250px;
+      width: auto;
+    }
   }
 `
 
@@ -32,6 +52,10 @@ export const DescriptionContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media (max-width: ${({ theme }) => theme.BREAKPOINTS.md}) {
+    width: auto;
+  }
 `
 
 export const Type = styled.div`
@@ -50,6 +74,11 @@ export const Title = styled.div`
   line-height: ${({ theme }) => theme.FONT.LINE_HEIGHT.large};
   letter-spacing: ${({ theme }) => theme.FONT.LETTER_SPACING.negativeSmall};
   margin-top: 10px;
+
+  @media (max-width: ${({ theme }) => theme.BREAKPOINTS.md}) {
+    font-size: ${({ theme }) => theme.FONT.SIZE.xlarge};
+    line-height: ${({ theme }) => theme.FONT.LINE_HEIGHT.medium};
+  }
 `
 
 export const Subtitle = styled.div`
@@ -58,4 +87,8 @@ export const Subtitle = styled.div`
   font-weight: ${({ theme }) => theme.FONT.WEIGHT.regular};
   line-height: ${({ theme }) => theme.FONT.LINE_HEIGHT.medium};
   margin-top: 22px;
+
+  @media (max-width: ${({ theme }) => theme.BREAKPOINTS.md}) {
+    margin-top: 15px;
+  }
 `

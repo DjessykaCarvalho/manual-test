@@ -8,6 +8,14 @@ export const theme = {
     son: '#7E0707',
     white: '#FFFFFF'
   },
+  BREAKPOINTS: {
+    xxs: '300px',
+    xs: '576px',
+    sm: '768px',
+    md: '992px',
+    lg: '1200px',
+    xl: '1400px'
+  },
   FONT: {
     SIZE: {
       small: '10px',
@@ -16,7 +24,8 @@ export const theme = {
       xlarge: '25px',
       xxlarge: '28px',
       superlarge: '40px',
-      gigantic: '90px'
+      gigantic: '60px',
+      xgigantic: '90px'
     },
     WEIGHT: {
       regular: 400,

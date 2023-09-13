@@ -6,6 +6,10 @@ export const QuizContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding: 20px 60px;
+
+  @media (max-width: ${({ theme }) => theme.BREAKPOINTS.md}) {
+    padding: 20px 5%;
+  }
 `
 
 export const ContainerButtons = styled.div`
