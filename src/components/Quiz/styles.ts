@@ -1,3 +1,4 @@
+import { xlargeText, xxlargeText } from '@/styles/sharedStyles'
 import { styled } from 'styled-components'
 
 export const QuizContainer = styled.div`
@@ -20,17 +21,14 @@ export const ContainerButtons = styled.div`
 `
 
 export const CloseButton = styled.div`
-  font-size: ${({ theme }) => theme.FONT.SIZE.xlarge};
+  ${xlargeText}
   text-align: end;
   cursor: pointer;
 `
 
 export const Message = styled.div`
+  ${xxlargeText}
   color: ${({ theme }) => theme.COLORS.father};
-  font-size: ${({ theme }) => theme.FONT.SIZE.xxlarge};
-  font-weight: ${({ theme }) => theme.FONT.WEIGHT.regular};
-  line-height: ${({ theme }) => theme.FONT.LINE_HEIGHT.large};
-  letter-spacing: ${({ theme }) => theme.FONT.LETTER_SPACING.negativeSmall};
 
   a {
     color: ${({ theme }) => theme.COLORS.grandfatherBackground};

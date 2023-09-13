@@ -1,5 +1,11 @@
 import { styled } from 'styled-components'
 import heroBackground from '@/assets/images/HeroBackground.png'
+import {
+  giganticText,
+  largeText,
+  mediumText,
+  xgiganticText
+} from '@/styles/sharedStyles'
 
 export const HeroContainer = styled.div`
   background-image: url(${heroBackground.src});
@@ -48,27 +54,19 @@ export const TitleContainer = styled.div`
 `
 
 export const Title = styled.span`
+  ${xgiganticText}
   color: ${({ theme }) => theme.COLORS.father};
-  font-size: ${({ theme }) => theme.FONT.SIZE.xgigantic};
-  font-weight: ${({ theme }) => theme.FONT.WEIGHT.semibold};
-  line-height: ${({ theme }) => theme.FONT.LINE_HEIGHT.xxlarge};
-  letter-spacing: ${({ theme }) => theme.FONT.LETTER_SPACING.negativeLarge};
 
   @media (max-width: ${({ theme }) => theme.BREAKPOINTS.md}) {
-    font-size: ${({ theme }) => theme.FONT.SIZE.gigantic};
-    line-height: ${({ theme }) => theme.FONT.LINE_HEIGHT.xlarge};
-    letter-spacing: ${({ theme }) => theme.FONT.LETTER_SPACING.negativeMedium};
+    ${giganticText}
   }
 `
 
 export const Subtitle = styled.span`
+  ${largeText}
   color: ${({ theme }) => theme.COLORS.father};
-  font-size: ${({ theme }) => theme.FONT.SIZE.large};
-  font-weight: ${({ theme }) => theme.FONT.WEIGHT.regular};
-  line-height: ${({ theme }) => theme.FONT.LINE_HEIGHT.medium};
 
   @media (max-width: ${({ theme }) => theme.BREAKPOINTS.md}) {
-    font-size: ${({ theme }) => theme.FONT.SIZE.medium};
-    line-height: ${({ theme }) => theme.FONT.LINE_HEIGHT.medium};
+    ${mediumText}
   }
 `

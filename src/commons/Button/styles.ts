@@ -1,3 +1,4 @@
+import { smallText } from '@/styles/sharedStyles'
 import { styled } from 'styled-components'
 
 export const ButtonContainer = styled.button`
@@ -6,10 +7,7 @@ export const ButtonContainer = styled.button`
   cursor: pointer;
 `
 export const Label = styled.span`
+  ${smallText}
   color: ${({ theme }) => theme.COLORS.white};
-  font-size: ${({ theme }) => theme.FONT.SIZE.small};
-  font-weight: ${({ theme }) => theme.FONT.WEIGHT.bold};
-  line-height: ${({ theme }) => theme.FONT.LINE_HEIGHT.small};
-  letter-spacing: ${({ theme }) => theme.FONT.LETTER_SPACING.normal};
   text-transform: uppercase;
 `

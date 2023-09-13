@@ -1,3 +1,4 @@
+import { mediumText, smallText } from '@/styles/sharedStyles'
 import { styled } from 'styled-components'
 
 export const FooterContainer = styled.div`
@@ -62,19 +63,14 @@ export const ContainerList = styled.div`
 `
 
 export const TitleLink = styled.div`
+  ${smallText}
   color: ${({ theme }) => theme.COLORS.father};
-  font-size: ${({ theme }) => theme.FONT.SIZE.small};
-  font-weight: ${({ theme }) => theme.FONT.WEIGHT.bold};
-  line-height: ${({ theme }) => theme.FONT.LINE_HEIGHT.small};
-  letter-spacing: ${({ theme }) => theme.FONT.LETTER_SPACING.normal};
   text-transform: uppercase;
 `
 
 export const LinkDescription = styled.div`
+  ${mediumText}
   color: ${({ theme }) => theme.COLORS.father};
-  font-size: ${({ theme }) => theme.FONT.SIZE.medium};
-  font-weight: ${({ theme }) => theme.FONT.WEIGHT.regular};
-  line-height: ${({ theme }) => theme.FONT.LINE_HEIGHT.medium};
   cursor: pointer;
 `
 
@@ -88,10 +84,8 @@ export const ContainerIcons = styled.div`
 `
 
 export const FooterText = styled.div`
+  ${mediumText}
   color: ${({ theme }) => theme.COLORS.grandfather30};
-  font-size: ${({ theme }) => theme.FONT.SIZE.medium};
-  font-weight: ${({ theme }) => theme.FONT.WEIGHT.regular};
-  line-height: ${({ theme }) => theme.FONT.LINE_HEIGHT.medium};
   border-top: 1px solid ${({ theme }) => theme.COLORS.grandfatherBackground};
   width: 80%;
   margin: 0 auto;

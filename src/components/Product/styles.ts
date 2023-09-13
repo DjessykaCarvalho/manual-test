@@ -1,3 +1,4 @@
+import { superlargeText, xxlargeText } from '@/styles/sharedStyles'
 import { styled } from 'styled-components'
 
 export const ProductContainer = styled.div`
@@ -12,14 +13,11 @@ export const ProductContainer = styled.div`
   }
 `
 export const Title = styled.div`
+  ${superlargeText}
   color: ${({ theme }) => theme.COLORS.father};
-  font-size: ${({ theme }) => theme.FONT.SIZE.superlarge};
-  font-weight: ${({ theme }) => theme.FONT.WEIGHT.semibold};
-  line-height: ${({ theme }) => theme.FONT.LINE_HEIGHT.xlarge};
-  letter-spacing: ${({ theme }) => theme.FONT.LETTER_SPACING.negativeMedium};
 
   @media (max-width: ${({ theme }) => theme.BREAKPOINTS.md}) {
-    font-size: ${({ theme }) => theme.FONT.SIZE.xxlarge};
+    ${xxlargeText}
   }
 `
 
