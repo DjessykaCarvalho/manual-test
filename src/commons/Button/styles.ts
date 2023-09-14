@@ -7,7 +7,7 @@ export const ButtonContainer = styled.button`
   cursor: pointer;
 `
 export const Label = styled.span`
-  ${smallText}
+  ${smallText};
   color: ${({ theme }) => theme.COLORS.white};
   text-transform: uppercase;
 `

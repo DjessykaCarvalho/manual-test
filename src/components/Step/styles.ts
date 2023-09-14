@@ -1,3 +1,5 @@
+'use client'
+
 import {
   largeText,
   smallText,
@@ -65,23 +67,23 @@ export const DescriptionContainer = styled.div`
 `
 
 export const Type = styled.div`
-  ${smallText}
+  ${smallText};
   color: ${({ theme }) => theme.COLORS.grandfather30};
   text-transform: uppercase;
 `
 
 export const Title = styled.div`
-  ${xxlargeText}
+  ${xxlargeText};
   color: ${({ theme }) => theme.COLORS.father};
   margin-top: 10px;
 
   @media (max-width: ${({ theme }) => theme.BREAKPOINTS.md}) {
-    ${xlargeText}
+    ${xlargeText};
   }
 `
 
 export const Subtitle = styled.div`
-  ${largeText}
+  ${largeText};
   color: ${({ theme }) => theme.COLORS.father};
   margin-top: 22px;
 

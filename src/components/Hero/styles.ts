@@ -1,3 +1,5 @@
+'use client'
+
 import { styled } from 'styled-components'
 import heroBackground from '@/assets/images/HeroBackground.png'
 import {
@@ -54,19 +56,19 @@ export const TitleContainer = styled.div`
 `
 
 export const Title = styled.span`
-  ${xgiganticText}
+  ${xgiganticText};
   color: ${({ theme }) => theme.COLORS.father};
 
   @media (max-width: ${({ theme }) => theme.BREAKPOINTS.md}) {
-    ${giganticText}
+    ${giganticText};
   }
 `
 
 export const Subtitle = styled.span`
-  ${largeText}
+  ${largeText};
   color: ${({ theme }) => theme.COLORS.father};
 
   @media (max-width: ${({ theme }) => theme.BREAKPOINTS.md}) {
-    ${mediumText}
+    ${mediumText};
   }
 `

@@ -14,10 +14,12 @@ function RootLayout({ children }: IRootLayoutProps) {
   return (
     <html className={ttNormsScript.className}>
       <body>
-        <ThemeProvider theme={theme}>
-          <GlobalStyle />
-          <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
-        </ThemeProvider>
+        <StyledComponentsRegistry>
+          <ThemeProvider theme={theme}>
+            <GlobalStyle />
+            {children}
+          </ThemeProvider>
+        </StyledComponentsRegistry>
       </body>
     </html>
   )

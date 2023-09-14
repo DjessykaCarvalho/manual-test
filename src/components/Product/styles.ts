@@ -1,3 +1,5 @@
+'use client'
+
 import { superlargeText, xxlargeText } from '@/styles/sharedStyles'
 import { styled } from 'styled-components'
 
@@ -13,11 +15,11 @@ export const ProductContainer = styled.div`
   }
 `
 export const Title = styled.div`
-  ${superlargeText}
+  ${superlargeText};
   color: ${({ theme }) => theme.COLORS.father};
 
   @media (max-width: ${({ theme }) => theme.BREAKPOINTS.md}) {
-    ${xxlargeText}
+    ${xxlargeText};
   }
 `
 

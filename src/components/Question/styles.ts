@@ -1,3 +1,5 @@
+'use client'
+
 import { largeText, xxlargeText } from '@/styles/sharedStyles'
 import { styled } from 'styled-components'
 
@@ -8,7 +10,7 @@ export const QuestionContainer = styled.div`
 `
 
 export const Title = styled.div`
-  ${xxlargeText}
+  ${xxlargeText};
   color: ${({ theme }) => theme.COLORS.father};
 `
 
@@ -17,7 +19,7 @@ export const RadioInputOption = styled.input.attrs({ type: 'radio' })`
 `
 
 export const RadioLabel = styled.label`
-  ${largeText}
+  ${largeText};
   display: flex;
   align-items: center;
   color: ${({ theme }) => theme.COLORS.father};

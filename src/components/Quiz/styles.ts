@@ -1,3 +1,5 @@
+'use client'
+
 import { xlargeText, xxlargeText } from '@/styles/sharedStyles'
 import { styled } from 'styled-components'
 
@@ -21,13 +23,13 @@ export const ContainerButtons = styled.div`
 `
 
 export const CloseButton = styled.div`
-  ${xlargeText}
+  ${xlargeText};
   text-align: end;
   cursor: pointer;
 `
 
 export const Message = styled.div`
-  ${xxlargeText}
+  ${xxlargeText};
   color: ${({ theme }) => theme.COLORS.father};
 
   a {

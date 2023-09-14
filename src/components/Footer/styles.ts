@@ -1,3 +1,5 @@
+'use client'
+
 import { mediumText, smallText } from '@/styles/sharedStyles'
 import { styled } from 'styled-components'
 
@@ -63,13 +65,13 @@ export const ContainerList = styled.div`
 `
 
 export const TitleLink = styled.div`
-  ${smallText}
+  ${smallText};
   color: ${({ theme }) => theme.COLORS.father};
   text-transform: uppercase;
 `
 
 export const LinkDescription = styled.div`
-  ${mediumText}
+  ${mediumText};
   color: ${({ theme }) => theme.COLORS.father};
   cursor: pointer;
 `
@@ -84,7 +86,7 @@ export const ContainerIcons = styled.div`
 `
 
 export const FooterText = styled.div`
-  ${mediumText}
+  ${mediumText};
   color: ${({ theme }) => theme.COLORS.grandfather30};
   border-top: 1px solid ${({ theme }) => theme.COLORS.grandfatherBackground};
   width: 80%;
