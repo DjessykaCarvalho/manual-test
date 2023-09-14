@@ -19,7 +19,7 @@ interface IStepProps {
 
 const Step = ({ image, description, revert, backgroundImage }: IStepProps) => {
   return (
-    <StepContainer revert={String(revert)} backgroundimage={backgroundImage}>
+    <StepContainer revert={revert} backgroundimage={backgroundImage}>
       <div>
         <Image src={image} alt='' />
       </div>
