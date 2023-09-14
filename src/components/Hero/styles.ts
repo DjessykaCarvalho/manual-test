@@ -17,11 +17,11 @@ export const HeroContainer = styled.div`
   align-items: center;
   position: relative;
 
-  @media (max-width: ${({ theme }) => theme.BREAKPOINTS.md}) {
+  @media (max-width: ${({ theme }) => theme.BREAKPOINTS?.md}) {
     height: 600px;
   }
 
-  @media (min-width: ${({ theme }) => theme.BREAKPOINTS.xl}) {
+  @media (min-width: ${({ theme }) => theme.BREAKPOINTS?.xl}) {
     background-size: cover;
   }
 `
@@ -31,7 +31,7 @@ export const ContainerLogo = styled.div`
   top: 30px;
   left: 138px;
 
-  @media (max-width: ${({ theme }) => theme.BREAKPOINTS.md}) {
+  @media (max-width: ${({ theme }) => theme.BREAKPOINTS?.md}) {
     left: 10%;
   }
 `
@@ -43,7 +43,7 @@ export const ContainerInfo = styled.div`
   width: 468px;
   margin-left: 138px;
 
-  @media (max-width: ${({ theme }) => theme.BREAKPOINTS.md}) {
+  @media (max-width: ${({ theme }) => theme.BREAKPOINTS?.md}) {
     margin-left: 0;
     padding: 0 10%;
   }
@@ -57,18 +57,18 @@ export const TitleContainer = styled.div`
 
 export const Title = styled.span`
   ${xgiganticText};
-  color: ${({ theme }) => theme.COLORS.father};
+  color: ${({ theme }) => theme.COLORS?.father};
 
-  @media (max-width: ${({ theme }) => theme.BREAKPOINTS.md}) {
+  @media (max-width: ${({ theme }) => theme.BREAKPOINTS?.md}) {
     ${giganticText};
   }
 `
 
 export const Subtitle = styled.span`
   ${largeText};
-  color: ${({ theme }) => theme.COLORS.father};
+  color: ${({ theme }) => theme.COLORS?.father};
 
-  @media (max-width: ${({ theme }) => theme.BREAKPOINTS.md}) {
+  @media (max-width: ${({ theme }) => theme.BREAKPOINTS?.md}) {
     ${mediumText};
   }
 `

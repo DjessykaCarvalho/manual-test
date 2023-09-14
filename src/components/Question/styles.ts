@@ -11,7 +11,7 @@ export const QuestionContainer = styled.div`
 
 export const Title = styled.div`
   ${xxlargeText};
-  color: ${({ theme }) => theme.COLORS.father};
+  color: ${({ theme }) => theme.COLORS?.father};
 `
 
 export const RadioInputOption = styled.input.attrs({ type: 'radio' })`
@@ -22,7 +22,7 @@ export const RadioLabel = styled.label`
   ${largeText};
   display: flex;
   align-items: center;
-  color: ${({ theme }) => theme.COLORS.father};
+  color: ${({ theme }) => theme.COLORS?.father};
 `
 
 export const Options = styled.div`
