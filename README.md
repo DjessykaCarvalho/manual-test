@@ -28,7 +28,7 @@ Follow the steps below to install and run this project on your local machine:
 2. Navigate to the project directory:
 
    ```bash
-   cd project-name
+   cd manual-test
 
    ```
 
