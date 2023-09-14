@@ -51,7 +51,7 @@ Follow the steps below to install and run this project on your local machine:
 
 The application will be available at http://localhost:3000. You can access it in your browser to explore the project.
 
-If you want to access the live version of the project, it is available [here](https://manual-test-olive.vercel.app/){:target="_blank"}.
+If you want to access the live version of the project, it is available [here](https://manual-test-olive.vercel.app/).
 
 ## Project Structure
 
