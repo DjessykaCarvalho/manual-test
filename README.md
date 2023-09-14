@@ -36,8 +36,8 @@ Follow the steps below to install and run this project on your local machine:
 
    ```bash
    npm install
-    # or
-    yarn install
+   # or
+   yarn install
 
    ```
 
@@ -45,8 +45,8 @@ Follow the steps below to install and run this project on your local machine:
 
    ```bash
    npm run dev
-    # or
-    yarn dev
+   # or
+   yarn dev
    ```
 
 The application will be available at http://localhost:3000. You can access it in your browser to explore the project.
