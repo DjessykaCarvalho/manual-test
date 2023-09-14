@@ -1,34 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Manual Test Project
 
-## Getting Started
+This is a test project created as part of the Manual company's selection process. The purpose of this project is to demonstrate the use of modern technologies, such as Next.js, TypeScript, Styled Components, ESLint, and Prettier, for web application development.
 
-First, run the development server:
+## Technologies
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- [Next.js](https://nextjs.org/): A React framework for server-side rendering and building modern web applications.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [TypeScript](https://www.typescriptlang.org/): A typed programming language that adds static typing features to JavaScript.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [Styled Components](https://styled-components.com/): A library for styling React components using CSS-in-JS.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [ESLint](https://eslint.org/): A static code analysis tool that helps maintain clean and consistent JavaScript/TypeScript code.
 
-## Learn More
+- [Prettier](https://prettier.io/): A code formatter that ensures consistent code style throughout the project.
 
-To learn more about Next.js, take a look at the following resources:
+## Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Follow the steps below to install and run this project on your local machine:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Clone this repository:
 
-## Deploy on Vercel
+   ```bash
+   git clone https://github.com/DjessykaCarvalho/manual-test.git
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+2. Navigate to the project directory:
+
+   ```bash
+   cd project-name
+
+   ```
+
+3. Install the dependencies using npm or yarn:
+
+   ```bash
+   npm install
+    # or
+    yarn install
+
+   ```
+
+4. Start the application locally:
+
+   ```bash
+   npm run dev
+    # or
+    yarn dev
+   ```
+
+The application will be available at http://localhost:3000. You can access it in your browser to explore the project.
+
+## Project Structure
+
+The project structure follows best practices recommended for Next.js development, with React components styled using Styled Components, TypeScript for static typing, and ESLint and Prettier configurations to ensure code quality.

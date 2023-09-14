@@ -13,6 +13,9 @@ interface IRootLayoutProps {
 function RootLayout({ children }: IRootLayoutProps) {
   return (
     <html className={ttNormsScript.className}>
+      <head>
+        <title>Manual</title>
+      </head>
       <body>
         <StyledComponentsRegistry>
           <ThemeProvider theme={theme}>
